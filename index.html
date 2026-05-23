@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="site/src/assets/partials/snippets.js">
 </head>
 <body>
     <div class="container-lg">
@@ -42,7 +43,7 @@
   </div>
 </nav>
     </div>
-     <div class="container-lg">
+     <div class="container-lg p-3">
 <div class="container text-center">
   <div class="row">
     <div class="col align-self-start">
@@ -50,7 +51,7 @@
   <img src="https://www.nurserymag.com/remote/aHR0cHM6Ly9naWVjZG4uYmxvYi5jb3JlLndpbmRvd3MubmV0L2ZpbGV1cGxvYWRzL2ltYWdlLzIwMjMvMDIvMTAvcm9zZS1zdG9jay13ZWIuZ2lm.PfyxNP44W5M.gif?format=web" class="card-img-top" alt="">
   <div class="card-body">
     <h5 class="card-title">Roses</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p class="card-text">Roses bloom with timeless romance, filling gardens with beauty and love</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
     </div>
@@ -59,8 +60,8 @@
      <div class="card" style="width: 18rem;">
   <img src="https://deborahsilver.com/wp-content/uploads/2016/03/551-from-monrovia.jpg" class="card-img-top" alt="">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <h5 class="card-title">Daisies</h5>
+    <p class="card-text">daisies sway cheerfully in the breeze, spreading joy wherever they grow</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
     </div>
@@ -69,8 +70,8 @@
      <div class="card" style="width: 18rem;">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCN8WkDsnTpyQERe3M64H6bAGC-9X7cOnooA&s" class="card-img-top" alt="">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <h5 class="card-title">Tulips</h5>
+    <p class="card-text">tulips stand tall with colorful elegance, brightening every spring day</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
@@ -79,8 +80,8 @@
      <div class="card" style="width: 18rem;">
   <img src="https://www.shutterstock.com/image-photo/colorful-lilies-on-blurred-floral-260nw-2428237607.jpg" class="card-img-top" alt="">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <h5 class="card-title">Lillies</h5>
+    <p class="card-text">lilies blossom with delicate grace, adding a touch of peace and purity to nature’s masterpiece.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
@@ -88,7 +89,76 @@
   </div>
 </div>
 </div>
+ <div class="container-lg p-3">
+<button type="button" class="btn btn-primary position-relative">
+    <span class="text-bg-success">OPEN</span>
+  Notifications
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+  </span>
+</button>
+</div>
+<div class="container-lg">
+    <ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-warning">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Dahlia</div>
+    Dahlias burst with bold beauty and vibrant colors
+    </div>
+    <span class="badge text-bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-info">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Lilac</div>
+   lilacs fill the air with a sweet fragrance that brings the gentle feeling of spring.
+    </div>
+    <span class="badge text-bg-primary rounded-pill">99+</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start list-group-item-danger">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Orchid</div>
+       orchids bloom with rare elegance and exotic charm
+    </div>
+    <span class="badge text-bg-primary rounded-pill">12</span>
+  </li>
+</ol>
+</div>
+<div class="container-lg p-2"> 
+   <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
 
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="container-lg p-5">  
+    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.mos.cms.futurecdn.net/M4uAcZhQ9zWg8RGT9UAEqS.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.shutterstock.com/image-photo/closeup-group-different-beautiful-colorful-260nw-2179722481.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
